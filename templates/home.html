@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="home-section">
+  <div class="home-card">
+    <div class="home-image">
+      <img src="{{ url_for('static', filename='download (7).jpeg') }}" alt="Data Science Enthusiast">
+      <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+      
+
+
+    </div>
+    <div class="home-info">
+      <h1>Hello, I'm <span class="highlight">Manjunadhan</span></h1>
+      <h2>A Passionate Data Science Enthusiast</h2>
+      <p>
+        I am a fresher in Data Science with strong interest in 
+        <strong>Machine Learning, Artificial Intelligence, and Data Analytics</strong>.  
+        My goal is to turn raw data into meaningful insights and build solutions 
+        that solve real-world problems.  
+      </p>
+      <p>
+        Skilled in Python, Pandas, Scikit-learn, and Deep Learning frameworks,  
+        I am constantly learning and working on exciting projects like  
+        <strong>PCOS Detection using MobileNet</strong> and  
+        <strong>Laptop Price Prediction</strong>.
+      </p>
+      <a href="{{ url_for('projects') }}" class="btn">See My Projects</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

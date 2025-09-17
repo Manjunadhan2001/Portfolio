@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="resume-section">
+  <h2>My Resume</h2>
+  <p>You can view or download my resume below:</p>
+
+  <!-- Resume PDF Viewer -->
+  <iframe src="{{ url_for('static', filename='Manjunadhan_Resume.pdf') }}" 
+          width="100%" height="600px" style="border: none;">
+  </iframe>
+
+  <!-- Download Button -->
+  <div class="download-btn">
+    <a href="{{ url_for('static', filename='Manjunadhan_Resume.pdf') }}" download>
+      Download Resume
+    </a>
+  </div>
+</section>
+{% endblock %}
