@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="about-section">
+  <div class="about-card">
+
+    <!-- Centered Image -->
+    <div class="about-image">
+      <img src="{{ url_for('static', filename='student1.jpeg') }}" alt="Student Image">
+    </div>
+
+    <!-- Text Content -->
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <strong>Murigeshan Manjunadhan</strong>, a Data Science fresher passionate about 
+        <strong>Machine Learning  and Data Analytics</strong>. I enjoy turning 
+        raw data into meaningful insights and building solutions that make an impact.
+      </p>
+      <p>
+        <strong>Academic Background:</strong><br>
+        🎓 B.Tech in Computer Science (ANU Collge of Engineering)<br>(2020–2024)<br>
+
+        🏫 Intermediate – (MPC) (2018–2020)<br>
+        <strong>Certification:</strong><br>
+        📘 Certifications in Data Science in ACTE Technologies(2025)
+      </p>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

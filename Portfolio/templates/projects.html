@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="projects-section">
+  <h2>My Projects</h2>
+
+  <!-- Project 1: PCOS Detection -->
+  <div class="project-card">
+    <div class="project-image">
+      <img src="{{ url_for('static', filename='imhg.png') }}" alt="PCOS Detection">
+    </div>
+    <div class="project-info">
+      <h3>PCOS Detection using Ultrasound Images (MobileNet)</h3>
+      <p>
+        A deep learning model that detects <strong>Polycystic Ovary Syndrome (PCOS)</strong> 
+        from ultrasound images using the <strong>MobileNet architecture</strong>.  
+        This project aims to assist doctors by providing a fast and reliable tool for medical image classification.
+      </p>
+      <p class="tech"><em>Technologies Used:</em> Python, TensorFlow/Keras, MobileNet, Image Processing</p>
+    </div>
+  </div>
+
+  <!-- Project 2: Laptop Price Prediction -->
+  <div class="project-card">
+    <div class="project-image">
+      <img src="{{ url_for('static', filename='images.jpeg') }}" alt="Laptop Price Prediction">
+    </div>
+    <div class="project-info">
+      <h3>Laptop Price Prediction using Machine Learning</h3>
+      <p>
+        A machine learning model that predicts the <strong>price of laptops</strong> 
+        based on features such as processor type, RAM, storage, and graphics card.  
+        It helps users estimate the price range of a laptop configuration before purchase.
+      </p>
+      <p class="tech"><em>Technologies Used:</em> Python, Pandas, Scikit-learn, Regression Models, Data Visualization</p>
+    </div>
+  </div>
+
+</section>
+{% endblock %}
